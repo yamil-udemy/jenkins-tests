@@ -5,11 +5,10 @@ class Car:
         self.car_banch=input("type in the car branch: ")
         self.car_model=input("type in the car model: ")
         self.car_year=int(input("type in the car year:"))
-        
+
 
 
 class Taxes(Car):
-
     def taxation(self):
         super().__init__()
         if self.car_year >= 2010:
@@ -19,13 +18,13 @@ class Taxes(Car):
             self.tax=self.car_year*1.5
             print(f"Taxes for the car are: {self.tax}")
         elif self.car_year<=1999:
-            self.tax=self.car_year*1.1
+            self.tax=self.car_year*1.05vv
             print(f"Taxes for the car are: {self.tax}")
 
 
 
 
-car=Car()
+#car=Car()
 #car.print_data()
 print("\n")
 taxes=Taxes()
