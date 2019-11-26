@@ -21,14 +21,13 @@ class Taxes(Car):
             self.tax=self.car_year*1.0
             self.tax=self.car_year*1.05
             print(f"Taxes for the car are: {self.tax}")
-        if self.car_model=="civic":
+        if self.car_model=="civic" or self.car_model=="corolla":
               self.tax=self.tax*1.05
-              print(f"class tax for the car are{self.tax} ")
+              print(f"class tax for the car are {self.tax} ")
 
 
-#car=Car()
-#car.print_data()
+
 print("\n")
 taxes=Taxes()
-
+print("\n")
 taxes.taxation()
