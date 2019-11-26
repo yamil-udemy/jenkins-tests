@@ -25,9 +25,6 @@ class Taxes(Car):
               self.tax=self.tax*1.05
               print(f"class tax for the car are {self.tax} ")
 
-
-
 print("\n")
-taxes=Taxes()
+Taxes().taxation()
 print("\n")
-taxes.taxation()
